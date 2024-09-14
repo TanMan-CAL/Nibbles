@@ -13,8 +13,8 @@ const Ingredients = () => {
 
   return (
     <div className="Ingredients-container">
-      <h1 className="Ingredients-title">Title</h1>
-      <p className="Ingredients-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h1 className="Ingredients-title">Ingredients</h1>
+    <p className="Ingredients-description">Check how much of each ingredient you have!</p>
       <div className="grid-container">
         {containerData.map((item, index) => (
           <div className="content-container" key={index}>

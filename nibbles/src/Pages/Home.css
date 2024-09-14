@@ -12,7 +12,6 @@
     z-index: 1; /* Ensure it's behind the navbar */
 }
 
-
 .overlay {
     text-align: center;
     color: white;
@@ -24,6 +23,7 @@
     transform: translateY(-50%);
 }
 
+
 .text-content {
     width: 80%;
     padding: 20px;
@@ -33,6 +33,21 @@
 
 .text-content p {
     text-align: center;
+    font-size: 1.7rem; /* Slightly bigger font */
+    line-height: 2; /* Double spacing */
+    margin-top: 80px; /* Padding between the title and paragraph */
+    margin-bottom: 200px; /* Padding between the title and paragraph */
+    width: 80%; /* Reduce the width of the paragraph */
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-content h1{
+    text-align: center;
+    font-size: 3rem; /* Slightly bigger font */
+    line-height: 2; /* Double spacing */
+    margin-top: 50px; /* Padding between the title and paragraph */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Fix for background image taking the entire width */

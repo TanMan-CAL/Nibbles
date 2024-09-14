@@ -10,7 +10,7 @@ const Recipies = () => {
 
   return (
     <div className="recipie-container">
-      <h1 className="recipie-title">Title</h1>
+      <h1 className="recipie-title">Recipies</h1>
       {containerData.map((item, index) => (
         <div className="content-container" key={index}>
           <div className="image-container">
