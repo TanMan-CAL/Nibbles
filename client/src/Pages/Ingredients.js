@@ -1,6 +1,7 @@
 import './Ingredients.css';
 import React, { useEffect, useState } from "react";
 import Axios from 'axios';
+import FileBase from 'react-file-base64';
 
 const Ingredients = () => {
   const [grids, setGrids] = useState([]);  // State to store fetched data
@@ -36,6 +37,7 @@ const Ingredients = () => {
                 <p>Ingredient: {grid.ingredient || 'No description available'}</p>
                 <p>Weight in grams: {grid.weight || 'No description available'}</p>
                 <p>Protein/100g: {grid.protein || 'No description available'}</p>
+                
               </div>
             </div>
           ))
