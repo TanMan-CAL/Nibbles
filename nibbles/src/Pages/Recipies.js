@@ -10,7 +10,8 @@ const Recipies = () => {
 
   return (
     <div className="recipie-container">
-      <h1 className="recipie-title">Recipies</h1>
+      <h1 className="recipie-title">Hey OmarE!</h1>
+      <h4 className="recipie-intro">Here are the recipies you can make today:</h4>
       {containerData.map((item, index) => (
         <div className="content-container" key={index}>
           <div className="image-container">

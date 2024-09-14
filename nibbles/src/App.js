@@ -7,6 +7,7 @@ import Ingredients from './Pages/Ingredients';
 import AboutUs from './Pages/AboutUs';
 import Contact from './Pages/Contact';
 import Navbar from './Components/Navbar';
+import Login from './Pages/Login';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/Login" component={Login} />
         <Route path="/Recipies" component={Recipies} />
         <Route path="/Ingredients" component={Ingredients} />
         <Route path="/AboutUs" component={AboutUs} />

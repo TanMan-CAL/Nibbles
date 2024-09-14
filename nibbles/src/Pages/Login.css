@@ -1,0 +1,83 @@
+/* General Page Layout */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items toward the top */
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes full height */
+    padding-top: 50px; /* Add some padding to push the form down slightly */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Title */
+.login-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Login Form */
+.login-container form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.login-container label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #666;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* Input Fields: Focus State */
+.login-container input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .login-container form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .login-container h1 {
+        font-size: 2rem;
+    }
+}

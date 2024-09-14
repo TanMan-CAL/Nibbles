@@ -11,7 +11,9 @@ const Home = () => {
                     <h3>Your Fridge, Your Menu, Simplified</h3>
                 </div>
                 <div className="button-container"> {/* New button container outside the overlay */}
-                    <button className="get-started-btn">Get Started</button>
+                    <button className="get-started-btn">
+                        <a href="/login">Get Started</a>
+                    </button>
                 </div>
             </div>
             <div className="text-content">

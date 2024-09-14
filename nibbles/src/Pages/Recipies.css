@@ -9,6 +9,11 @@
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
+  .recipie-intro {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
   
   .recipie-container .content-container {
     display: flex;

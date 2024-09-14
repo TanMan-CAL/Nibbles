@@ -1,3 +1,4 @@
+/* General Page Layout */
 .home-container {
     position: relative;
     width: 100%;
@@ -12,6 +13,7 @@
     z-index: 1; /* Ensure it's behind the overlay */
 }
 
+/* Overlay for the title and slogan */
 .overlay {
     text-align: center;
     color: white;
@@ -19,43 +21,61 @@
     padding: 40px; /* Padding for the title and slogan */
     position: absolute;
     width: 100%;
-    top: 40%; /* Moved the overlay slightly higher */
-    transform: translateY(-50%);
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust position to center it vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Horizontal and vertical centering */
 }
 
 /* Target the title in the overlay */
 .overlay h1 {
     font-size: 5rem; /* Increased font size for the Nibbles title */
     margin: 0;
-    font-weight: bold; /* Optional: Make the title bold */
+    font-weight: bold; /* Make the title bold */
 }
 
+/* Button container */
 .button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
     position: absolute;
     width: 100%;
-    top: 60%; /* Position the button outside the overlay box */
+    top: 65%; /* Position the button slightly below the title */
     transform: translateY(-50%);
 }
 
+/* Get Started Button */
 .get-started-btn {
     background-color: #006400; /* Dark green background */
-    color: white;
+    box-shadow: 0px 4px 15px #32CD32; /* Bright green shadow */
+    color: white; /* White text */
     padding: 15px 30px;
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 4px 15px #32CD32; /* Bright green shadow */
-    transition: all 0.3s ease; /* Smooth transition */
+    text-align: center;
+    display: inline-block;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
 }
 
+/* Style the <a> inside the button */
+.get-started-btn a {
+    color: inherit; /* Inherit white text color from button */
+    text-decoration: none; /* Remove underline from link */
+    display: block; /* Ensure the link takes the full button area */
+    height: 100%;
+    width: 100%;
+}
+
+/* Hover effect for button */
 .get-started-btn:hover {
     background-color: #228B22; /* Slightly lighter green on hover */
     box-shadow: 0px 6px 20px #32CD32; /* Slightly larger shadow on hover */
 }
 
+/* Text content styles */
 .text-content {
     width: 80%;
     padding: 20px;
@@ -65,20 +85,20 @@
 
 .text-content p {
     text-align: center;
-    font-size: 1.7rem; /* Slightly bigger font */
-    line-height: 2; /* Double spacing */
-    margin-top: 80px; /* Padding between the title and paragraph */
-    margin-bottom: 200px; /* Padding between the title and paragraph */
-    width: 80%; /* Reduce the width of the paragraph */
+    font-size: 1.7rem;
+    line-height: 2;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .text-content h1 {
     text-align: center;
-    font-size: 3rem; /* Increased font size for the title in the text-content */
-    line-height: 2; /* Double spacing */
-    margin-top: 50px; /* Padding between the title and paragraph */
+    font-size: 3rem;
+    line-height: 2;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
