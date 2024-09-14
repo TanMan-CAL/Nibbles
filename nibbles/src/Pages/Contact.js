@@ -66,7 +66,7 @@ const Contact = () => {
       </form>
 
       <p className="contact-description">
-        If you have any pressing concerns, feel free to send an email to email@company.com
+        If you have any pressing concerns, feel free to send an email to outreach@nibbles.com
       </p>
     </div>
   );
