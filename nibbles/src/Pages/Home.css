@@ -1,0 +1,46 @@
+.home-container {
+    position: relative;
+    width: 100%;
+}
+
+.main-content {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Ensure the navbar is positioned relative to this container */
+    z-index: 1; /* Ensure it's behind the navbar */
+}
+
+
+.overlay {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-content {
+    width: 80%;
+    padding: 20px;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.text-content p {
+    text-align: center;
+}
+
+/* Fix for background image taking the entire width */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}

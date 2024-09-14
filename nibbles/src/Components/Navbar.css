@@ -1,0 +1,62 @@
+/* Default Navbar style for all pages */
+.navbar {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #033a0e, #89d73a); /* Gradient from dark green to bamboo green */
+  }
+  
+  /* Navbar style for the homepage */
+  .navbar-home {
+    border-bottom: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above the background image */
+  }
+  
+  /* Navbar style for all other pages */
+  .navbar-regular {
+    color: white;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  
+  /* Ensure the content on non-home pages starts below the navbar */
+  .page-container {
+    padding-top: 100px; /* Add a large enough space to push content down */
+    box-sizing: border-box;
+  }
+  
+  /* Title styling */
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  /* Links container */
+  .navbar .links {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Link styling */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Home page link styling */
+  .navbar-home a {
+    color: white;
+  }
+  
+  .navbar a:hover {
+    color: lightgray;
+  }
+  
