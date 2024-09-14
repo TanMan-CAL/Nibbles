@@ -1,7 +1,7 @@
 import React from 'react';
 import './Recipies.css';
 
-const Page1 = () => {
+const Recipies = () => {
   const containerData = [
     { title: 'Title 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '' },
     { title: 'Title 2', description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', img: '' },
@@ -27,4 +27,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Recipies;
