@@ -16,13 +16,12 @@
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
-    padding: 20px;
+    padding: 40px; /* Increased padding for a taller shadow box */
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 .text-content {
     width: 80%;
@@ -41,9 +40,10 @@
     margin-left: auto;
     margin-right: auto;
 }
-.text-content h1{
+
+.text-content h1 {
     text-align: center;
-    font-size: 3rem; /* Slightly bigger font */
+    font-size: 3rem; /* Increased font size for the title */
     line-height: 2; /* Double spacing */
     margin-top: 50px; /* Padding between the title and paragraph */
     margin-left: auto;

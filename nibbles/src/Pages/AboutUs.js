@@ -3,6 +3,7 @@ import './AboutUs.css';
 
 // Import the images directly
 import OmarImage from '../Images/Omar.png';
+import AaronImage from '../Images/Aaron.png';
 import TanmayImage from '../Images/Tanmay.png';
 
 const AboutUs = () => {
@@ -10,7 +11,7 @@ const AboutUs = () => {
     { name: 'Omar Elgazzar', bio: '1st year Mechatronics Student @ University of Waterloo', image: OmarImage },
     { name: 'Nihar Sheth', bio: '1st year Mechatronics Student @ University of Waterloo', image: OmarImage },
     { name: 'Tanmay Shah', bio: '1st year Software Student @ University of Waterloo', image: TanmayImage },
-    { name: 'Aaron Kang', bio: '12th Grade Student @ Lord Byng Secondary School', image: OmarImage },
+    { name: 'Aaron Kang', bio: '12th Grade Student @ Lord Byng Secondary School', image: AaronImage },
   ];
 
   return (

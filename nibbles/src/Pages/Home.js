@@ -8,7 +8,7 @@ const Home = () => {
             <div className="main-content" style={{ backgroundImage: `url(${Kitchen})` }}>
                 <div className="overlay">
                     <h1>Nibbles</h1>
-                    <h3>Nibbles: Your Fridge, Your Menu, Simplified</h3>
+                    <h3>Your Fridge, Your Menu, Simplified</h3>
                 </div>
             </div>
             <div className="text-content">

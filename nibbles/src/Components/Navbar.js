@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${isHomePage ? 'navbar-home' : 'navbar-regular'}`}>
-            <h1>Title</h1>
+            <h1>Nibbles</h1>
             <div className="links">
                 <Link to="/">Home</Link>
                 <Link to="/Recipies">Recipies</Link>
