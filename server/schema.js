@@ -10,7 +10,7 @@ const postSchema = mongoose.Schema({
         type: Number, // value is also an integer
          // Ensure it's required
     },
-    
+    img: String,
 });
 
 const PostGrid = mongoose.model('grid', postSchema);

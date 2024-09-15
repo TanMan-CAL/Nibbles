@@ -1,48 +1,45 @@
+/* Ingredients.css */
+
 .Ingredients-container {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .Ingredients-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .Ingredients-description {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .Ingredients-container .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-  
-  .Ingredients-container .content-container {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .Ingredients-container .image-placeholder {
-    width: 100%;
-    height: 150px;
-    background-color: #d3d3d3;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .Ingredients-container .description {
-    padding: 1rem 0;
-  }
-  
-  .Ingredients-container .description p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-  }
-  
+  padding: 20px;
+}
+
+.Ingredients-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Ingredients-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;  /* Center the grid items horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 300px; /* Increase the width slightly */
+  height: 350px; /* Increase the width slightly */
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.image-placeholder {
+  width: 100%; /* Make image responsive to container width */
+  aspect-ratio: 1 / 1; /* Set aspect ratio to 1:1 to keep the image square */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.description {
+  text-align: center;
+}
