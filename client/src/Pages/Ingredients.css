@@ -1,45 +1,87 @@
-/* Ingredients.css */
-
 .Ingredients-container {
-  padding: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .Ingredients-title {
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .Ingredients-description {
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
 }
 
-.grid-container {
-  display: flex;
-  justify-content: center;  /* Center the grid items horizontally */
-  flex-wrap: wrap;
-  gap: 20px;
+.Ingredients-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.content-container {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  width: 300px; /* Increase the width slightly */
-  height: 350px; /* Increase the width slightly */
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+.Ingredients-container .content-container {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 300px;
+  height: 350px;
 }
 
-.image-placeholder {
-  width: 100%; /* Make image responsive to container width */
-  aspect-ratio: 1 / 1; /* Set aspect ratio to 1:1 to keep the image square */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-  margin-bottom: 10px; /* Space between image and text */
+.Ingredients-container .image-placeholder {
+  width: 150px; /* Adjusted width */
+  height: 150px; /* Adjusted height to be equal to width */
+  background-color: #d3d3d3;
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 1rem;
+  object-fit: cover; /* Ensures the image covers the circle */
 }
 
-.description {
-  text-align: center;
+.Ingredients-container .description {
+  padding: 1rem 0;
+  text-align: center; /* Center text in description */
+}
+
+.Ingredients-container .description p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Add margin to shopping list title for more space */
+.Ingredients-container .shopping-list-title {
+  font-size: 3rem;
+  margin-top: 150px; /* Adjust this value to increase spacing */
+}
+
+/* Style for replenish list */
+.Ingredients-container .replenish-list {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* Adjust this value to control spacing */
+}
+
+/* Style for shopping list section */
+.Ingredients-container .shopping-list {
+  font-size: 1.2rem;
+  margin-top: 20px; /* Adjust this value to control spacing */
+}
+
+/* Remove bullet points and center align list items */
+.Ingredients-container .shopping-list ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align list items to the left */
+  display: inline-block; /* Ensure ul does not stretch full width */
+}
+
+.Ingredients-container .shopping-list li {
+  font-size: 1.3rem;
+  margin-bottom: 250px;
 }
