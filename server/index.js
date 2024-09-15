@@ -14,7 +14,7 @@ app.use(cors());
 app.use('/grid', postRoutes);
 
 const CONNECTION_URL = 'mongodb+srv://tammyshah2007:Tanmay2007@hackthenorth.hko8s.mongodb.net/?retryWrites=true&w=majority&appName=HackTheNorth';
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 4000;
 
 mongoose.connect(CONNECTION_URL)
     .then(() => app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`))) //resolve warnings in console 
