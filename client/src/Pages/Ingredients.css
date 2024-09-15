@@ -35,14 +35,7 @@
   height: 350px;
 }
 
-.Ingredients-container .image-placeholder {
-  width: 150px; /* Adjusted width */
-  height: 150px; /* Adjusted height to be equal to width */
-  background-color: #d3d3d3;
-  border-radius: 50%; /* Makes the image circular */
-  margin-bottom: 1rem;
-  object-fit: cover; /* Ensures the image covers the circle */
-}
+
 
 .Ingredients-container .description {
   padding: 1rem 0;
@@ -83,5 +76,13 @@
 
 .Ingredients-container .shopping-list li {
   font-size: 1.3rem;
-  margin-bottom: 250px;
+  margin-bottom: 20px;
 }
+
+
+.ingredient-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+

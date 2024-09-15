@@ -1,56 +1,33 @@
 import './Ingredients.css';
 import React, { useEffect, useState } from "react";
-import Axios from 'axios';
+import eggsImage from '../Images/eggs.png'; 
+import riceImage from '../Images/rice.png'; 
+import tofuImage from '../Images/tofu.png';
+import { all } from 'axios';
 
-const Ingredients = () => {
-  const [grids, setGrids] = useState([]);  // State to store fetched data
-  const [loading, setLoading] = useState(true);  // State for tracking loading
-  const [shoppingList, setShoppingList] = useState([]);  // State for shopping list
-
+const Ingredients = ({ shoppingList, allData }) => {
   // Map of ingredients to their typical unit weight
   const ingredientUnitWeight = {
-    'egg': 57,         
+    'eggs': 57,  // Consistently use 'eggs' here        
     'rice': 195,         
     'tofu': 340,       
-
   };
 
-  useEffect(() => {
-    // Fetch data when the component mounts
-    Axios.get('http://localhost:4000/grid')  // Adjust the endpoint if needed
-      .then((res) => {
-        const data = res.data;
-        if (Array.isArray(data)) {
-          setGrids(data);  // Update state with fetched data
+  // Map of ingredients to their images
+  const ingredientImages = {
+    'eggs': eggsImage,  // Use 'eggs' here as well
+    'rice': riceImage,
+    'tofu': tofuImage
+  };
 
-          // Axios.post('http://localhost:9000/cohere', data);
-          // Filter ingredients that need to be replenished
-          const itemsToReplenish = data.filter(grid => grid.weight <= grid.limit);
-          setShoppingList(itemsToReplenish);  // Update shopping list state
-        } else {
-          console.error('Unexpected data format:', data);
-        }
-
-        
-
-        setLoading(false);  // Set loading to false once data is fetched
-      })
-      .catch((err) => {
-        console.error('Error fetching grids:', err);
-        setLoading(false);  // Set loading to false even on error
-      });
-  }, []);
 
   const convertWeightToQuantity = (ingredient, weight) => {
-    if (ingredientUnitWeight[ingredient]) {
-      return Math.floor(weight / ingredientUnitWeight[ingredient]);  // Convert weight to quantity
+    const normalizedIngredient = ingredient.toLowerCase();
+    if (ingredientUnitWeight[normalizedIngredient]) {  // Ensure case-insensitive lookup
+      return Math.floor(weight / ingredientUnitWeight[normalizedIngredient]);  // Convert weight to quantity
     }
     return weight;  // If no mapping found, return weight
   };
-
-  if (loading) {
-    return <h1>Loading...</h1>;  // Show loading message while fetching data
-  }
 
   return (
     <div className="Ingredients-container">
@@ -59,15 +36,19 @@ const Ingredients = () => {
 
       {/* Display the ingredients */}
       <div className="grid-container">
-        {grids.length > 0 ? (
-          grids.map((grid, index) => (
+        {allData.length > 0 ? (
+          allData.map((grid, index) => (
             <div className="content-container" key={index}>
-              {/* Image from MongoDB (base64 string) */}
-              <img src={grid.img || 'placeholder.png'} alt="Ingredient" className="image-placeholder" />
+              {/* Display the image if available or use placeholder */}
+              <img 
+                src={ingredientImages[grid.ingredient.toLowerCase()]} 
+                alt={grid.ingredient} 
+                className="ingredient-image" 
+              />
               <div className="description">
                 <p>Ingredient: {grid.ingredient || 'No description available'}</p>
                 <p>
-                  Quantity: {convertWeightToQuantity(grid.ingredient, grid.weight) || 'No description available'}
+                  Quantity: {convertWeightToQuantity(grid.ingredient, grid.weight) || grid.weight}
                 </p>
                 <p>Protein/100g: {grid.protein || 'No description available'}</p>
               </div>
@@ -99,3 +80,6 @@ const Ingredients = () => {
 };
 
 export default Ingredients;
+
+
+
