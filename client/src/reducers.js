@@ -10,3 +10,5 @@ export default (posts = [], action) => { // posts will be an array || post is th
             return posts;
     }
 };
+
+// need to make delete operation
