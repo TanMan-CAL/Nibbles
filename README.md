@@ -1,7 +1,6 @@
 # Nibbles
 
-• A full-stack application that recommends recipes based on pantry inventory and locates the nearest grocery stores offering the cheapest ingredients.
-• Fine-tuned Cohere’s machine learning model with transfer learning to improve recipe generation accuracy and created an API endpoint for querying recipes by dietary restrictions
+A full-stack application that recommends recipes based on pantry inventory and locates the nearest grocery stores offering the cheapest ingredients. Fine-tuned Cohere’s machine learning model with transfer learning to improve recipe generation accuracy and created an API endpoint for querying recipes by dietary restrictions
 
 ## Tech Stack
 - **Frontend**: React.js, Tailwind CSS
