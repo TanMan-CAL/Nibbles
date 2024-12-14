@@ -12,7 +12,6 @@ A full-stack application that recommends recipes based on pantry inventory and l
 1. Clone the repository
    ```bash
    git clone https://github.com/your-username/recipe-app.git
-   cd recipe-app
 2. Install dependencies
    ```bash
    npm install
